@@ -1,0 +1,107 @@
+.what-IS-jdoodle {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem;
+    background: var(--color-footer);
+
+}
+
+.what-IS-jdoodle-feature {
+    display: flex;
+}
+
+/* Customizing feature component as per needs */
+.what-IS-jdoodle-feature .features-container-item {
+    margin: 0;
+}
+
+/* Customizing feature component as per needs */
+.what-IS-jdoodle-feature .feature-text {
+    max-width: 700px;
+}
+
+.what-IS-jdoodle-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 4rem 0 2rem;
+}
+
+.what-IS-jdoodle-heading h1 {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 800;
+    font-family: var(--font-family);
+    max-width: 510px;
+}
+
+.what-IS-jdoodle-heading p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color-subtext);
+    cursor: pointer;
+}
+
+.what-IS-jdoodle-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    margin-top: 2rem;
+}
+
+/* Customizing feature component as per needs */
+.what-IS-jdoodle-container .features-container-item {
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+}
+
+/* Customizing feature component as per needs */
+.what-IS-jdoodle-container .feature-text {
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 850px) {
+    .what-IS-jdoodle-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .what-IS-jdoodle-heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /* Customizing feature component as per needs */
+    .what-IS-jdoodle-feature .features-container-item {
+        flex-direction: column;
+    }
+
+    /* Customizing feature component as per needs */
+    .what-IS-jdoodle-feature .feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .what-IS-jdoodle-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Customizing feature component as per needs */
+    .what-IS-jdoodle-container .features-container-item {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}
