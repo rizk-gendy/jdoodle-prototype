@@ -44,6 +44,9 @@
   border: 1px solid #fff;
 }
 
+.data-input .play-store{ width: 200px; padding: 10px;}
+.data-input .app-store{ width: 200px; border-radius:20px; padding: 10px; }
+
 .footer-items {
   width: 100%;
   max-width: 1000px;
@@ -154,4 +157,7 @@
   .social-media-wrap {
     flex-direction: column;
   }
+  .data-input .play-store{ width: 150px; padding: 10px;}
+.data-input .app-store{ width: 150px; border-radius:15px; padding: 10px; }
+
 }

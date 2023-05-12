@@ -3,6 +3,8 @@ import './Footer.css';
 import { Link } from 'react-router-dom';
 import { Btn } from '../Btn/Btn';
 import logo from '../../assets/images/logo.png'
+import playstore from '../../assets/images/playstore.png'
+import appstore from '../../assets/images/appstore.jpg'
 
 function Footer() {
   return (
@@ -10,6 +12,12 @@ function Footer() {
       <section className='footer-sub'>
         <p className='footer-sub-heading'>
           JDoodle For Your Organisation
+        </p>
+        <p style={{fontSize:'16px'}} className='footer-sub-heading'> 
+          Looking for advanced IDE and compiler features such as debugging ,GUI,DBs,etc.?
+        </p>
+        <p style={{fontSize:'16px'}} className='footer-sub-heading'>
+          We provide white-labelled tailor-made state-of-the-art IDE and compiler solutions
         </p>
         <div className='data-input'>
           <form>
@@ -21,6 +29,16 @@ function Footer() {
             />
             <Btn buttonStyle='btn--outline'>Support Request</Btn>
           </form>
+        </div>
+      </section>
+      <section className='footer-sub'>
+        <p className='footer-sub-heading'>
+          Download Now 
+        </p>
+
+        <div className='data-input'>
+            <img className='play-store' src={playstore}/>
+            <img className='app-store' src={appstore}/>
         </div>
       </section>
 
@@ -77,7 +95,7 @@ function Footer() {
         <div className='social-media-wrap'>
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
-            <img src={logo} style={{ width: '150px' }} />
+              <img src={logo} style={{ width: '150px' }} />
 
             </Link>
           </div>
